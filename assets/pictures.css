@@ -1,0 +1,33 @@
+@charset "utf-8";
+.img_float {
+    float: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    border: thick dashed #FFFFFF;
+}
+.img_float_right {
+    float: right;
+    border: thick dashed #FFFFFF;
+    margin-left: auto;
+}
+.img_float_middle {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: thick dashed #FFFFFF;
+    margin-top: 23px;
+}
+
+
+
+
+@media (min-width:481px){
+.img_float {
+    float: left;
+    border: thick dashed #FFFFFF;
+}
+
+
+}

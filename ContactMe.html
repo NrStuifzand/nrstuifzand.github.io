@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--Style sheets -->
+<meta charset="utf-8">
+<title>Contact Me</title>
+<link href="assets/Background.css" rel="stylesheet" type="text/css">
+<link href="assets/Headings.css" rel="stylesheet" type="text/css">
+<link href="assets/pictures.css" rel="stylesheet" type="text/css">
+<link href="assets/navigate.css" rel="stylesheet" type="text/css">
+<link href="assets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!-- Header image -->
+	<div class="header"><img src="images/headingdog.png" alt="Header image" width="450" height="250" usemap="#Map">
+      <map name="Map">
+        <area shape="rect" coords="123,15,320,185" href="index.html" alt="Home page">
+      </map>
+	</div>
+	<!--Navigation bar -->
+<nav class="menu_bar">
+  <ul>
+    <li><a href="index.html">Home</a>    </li>
+    <li><a href="HowCare.html"> Care</a></li>
+    <li><a href="WhyChoose.html">Why Choose</a></li>
+    <li><a href="WhyRescue.html">Why Rescue</a></li>
+	<li><a href="information_me.html">About Me</a></li>
+  </ul>
+</nav>
+	<!--Content -->
+	<h1>Contact Me</h1>
+	<p><img src="images/phonedog.jpg" alt="Dog holding telephone" width="320" height="306" class="img_float_middle"></p>
+<h3>If you would like to contact me for any reason, feel free to either text or email me!</h3>
+<h2>Phone Number</h2>
+<p>510-640-3433</p>
+<h2>Email</h2>
+  <p><a href="mailto:Nrstuifzand@my.waketech.edu">My Email</a>
+</p>
+	<!-- Survey here (Check here last)-->
+<form id="survey">
+    <fieldset id="visitInfo">
+      <legend>Visitor Information</legend>
+
+    <div class="formRow">
+      <label for="address">Address Title</label>
+      <select name="visitTitle" id="address">
+        <option value="title1">Miss</option>
+        <option value="title2">Mrs.</option>
+        <option value="title3">Ms</option>
+        <option value="title4">Dr.</option>
+        <option value="title5">Professor</option>
+        <option value="title6">Mr.</option>
+      </select>
+    </div>
+
+    <div class="formRow">
+      <label for="name">Name*</label> 
+      <input name="visitName" id="name" type="text" placeholder="first and last name" required >
+    </div>
+
+    <div class="formRow">
+      <label for="mail">Phone Number*</label> 
+      <input name="visitPhone" id="mail" type="tel" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+    </div>
+    
+    <div class="formRow">
+      <label for="visit">Date of visit</label>
+      <input name="visitDate" id="visit" type="date" >
+    </div>
+
+    <div class="formRow">
+      <label>Did you find the information here useful?</label>
+      <fieldset class="optGroup">
+        <label for="fYes">Yes</label>
+        <input name="sUseful" id="fYes" value="Yes" type="radio" >
+        <label for="fNo">No</label>
+        <input name="sUseful" id="fNo" value="No" type="radio" >
+      </fieldset>
+    </div>
+
+    </fieldset>
+
+    <div id="buttons">
+      <input type="submit" value="Submit" >
+      <input type="reset" value="Reset" >
+    </div>
+</form>
+</body>
+</html>

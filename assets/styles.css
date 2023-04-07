@@ -1,0 +1,54 @@
+@charset "utf-8";
+.header {
+    width: 450px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form#survey {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 10px;
+}
+
+div.formRow > * {
+    flex: 1 1 150px;
+}
+
+legend {
+    background-color:rgb(177, 135, 80);
+    color: white;
+    padding: 5px;
+}
+
+/* Buttons */
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+/*Input Box color */
+input:focus, select:focus, textarea:focus {
+    background-color:rgb(255, 225, 187);
+}
